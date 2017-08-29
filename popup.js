@@ -22,13 +22,6 @@ function getCurrentTabUrl(callback) {
   });
 }
 
-/**
- * @param {string} searchTerm - Search term for Google Image search.
- * @param {function(string,number,number)} callback - Called when an image has
- *   been found. The callback gets the URL, width and height of the image.
- * @param {function(string)} errorCallback - Called when the image is not found.
- *   The callback gets a string that describes the failure reason.
- */
 function getPullReqInfo(url, callback, errorCallback) {
 
   if (url.indexOf("github.com") == -1 || url.indexOf("/pull/") == -1) {
