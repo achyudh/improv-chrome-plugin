@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Code Change Reviewability",
+  "description": "This extension warns developers when they are committing code changes for review that are not optimal for the reviewers' tasks.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "res/icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "https://github.com/*",
+    "https://api.github.com/*"
+  ]
+}
